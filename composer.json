@@ -1,0 +1,48 @@
+{
+  "name": "chronhub/testing",
+  "description": "test",
+  "keywords": [
+    "stream"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "steph bug",
+      "email": "chronhubgit@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "chronhub/contracts": "dev-main",
+    "chronhub/chronicler": "dev-main",
+    "chronhub/message": "dev-main",
+    "chronhub/stream": "dev-main",
+    "chronhub/aggregate": "dev-main",
+    "illuminate/contracts" : "9.x",
+    "symfony/uid": "6.3.x",
+    "phpspec/prophecy-phpunit": "dev-master",
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "7.*"
+  },
+  "require-dev": {
+    "jangregor/phpstan-prophecy": "dev-master",
+    "laravel/pint": "^0.2",
+    "nunomaduro/larastan": "^2.1",
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Chronhub\\Testing\\": "src"
+    }
+  },
+  "scripts": {
+    "pint": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "minimum-stability": "dev"
+}
