@@ -12,7 +12,7 @@ final class GenericIdentity implements Identity
 {
     use HasAggregateIdentity;
 
-    public static function create(): Uuid|Identity
+    public static function create(): self|Identity
     {
         return new self(Uuid::v4());
     }

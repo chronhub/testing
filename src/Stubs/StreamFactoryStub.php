@@ -2,15 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Chronhub\Testing\Factory;
+namespace Chronhub\Testing\Stubs;
 
-use Chronhub\Stream\GenericStream;
 use Chronhub\Contracts\Stream\Stream;
 use Chronhub\Contracts\Stream\Factory;
-use Chronhub\Stream\GenericStreamName;
 use Chronhub\Contracts\Stream\StreamName;
 
-final class StreamFactory implements Factory
+final class StreamFactoryStub implements Factory
 {
     public function __invoke(StreamName|string $streamName, iterable $streamEvents = []): Stream
     {
@@ -18,6 +16,6 @@ final class StreamFactory implements Factory
             $streamName = $streamName->name();
         }
 
-        return new GenericStream(new GenericStreamName($streamName), $streamEvents);
+        return new StreamStub(new StreamNameStub($streamName), $streamEvents);
     }
 }

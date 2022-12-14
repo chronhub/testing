@@ -16,7 +16,6 @@
     "chronhub/contracts": "dev-main",
     "chronhub/chronicler": "dev-main",
     "chronhub/message": "dev-main",
-    "chronhub/stream": "dev-main",
     "chronhub/aggregate": "dev-main",
     "illuminate/contracts" : "9.x",
     "symfony/uid": "6.3.x",
