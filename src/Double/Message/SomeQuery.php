@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Chronhub\Testing\Double;
+namespace Chronhub\Testing\Double\Message;
 
 use Chronhub\Message\Domain;
-use Chronhub\Contracts\Message\DomainEvent;
+use Chronhub\Contracts\Message\DomainQuery;
 use Chronhub\Message\HasConstructableContent;
 
-final class AnotherEvent extends Domain implements DomainEvent
+final class SomeQuery extends Domain implements DomainQuery
 {
     use HasConstructableContent;
 }

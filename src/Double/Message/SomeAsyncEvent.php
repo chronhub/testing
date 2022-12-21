@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Chronhub\Testing\Double;
+namespace Chronhub\Testing\Double\Message;
 
 use Chronhub\Message\Domain;
+use Chronhub\Contracts\Message\DomainEvent;
 use Chronhub\Contracts\Message\AsyncMessage;
-use Chronhub\Contracts\Message\DomainCommand;
 use Chronhub\Message\HasConstructableContent;
 
-final class SomeAsyncCommand extends Domain implements DomainCommand, AsyncMessage
+final class SomeAsyncEvent extends Domain implements DomainEvent, AsyncMessage
 {
     use HasConstructableContent;
 }

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Chronhub\Testing\Double;
+namespace Chronhub\Testing\Double\Message;
 
 use Chronhub\Message\Domain;
 use Chronhub\Contracts\Message\DomainQuery;
 use Chronhub\Message\HasConstructableContent;
 
-final class SomeQuery extends Domain implements DomainQuery
+final class AnotherQuery extends Domain implements DomainQuery
 {
     use HasConstructableContent;
 }

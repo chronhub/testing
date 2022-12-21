@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Chronhub\Testing\Double;
+namespace Chronhub\Testing\Double\Message;
 
 use Throwable;
 use RuntimeException;

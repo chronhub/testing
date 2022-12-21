@@ -6,6 +6,6 @@ namespace Chronhub\Testing;
 
 use Orchestra\Testbench\TestCase;
 
-abstract class OrchestraTest extends TestCase
+abstract class OrchestraTestCase extends TestCase
 {
 }

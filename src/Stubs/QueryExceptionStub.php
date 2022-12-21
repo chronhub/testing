@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Chronhub\Testing\Stubs;
 
 use Illuminate\Database\QueryException;
-use Chronhub\Testing\Double\SomeException;
+use Chronhub\Testing\Double\Message\SomeException;
 
 final class QueryExceptionStub extends QueryException
 {

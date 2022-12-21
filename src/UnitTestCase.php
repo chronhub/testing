@@ -6,6 +6,6 @@ namespace Chronhub\Testing;
 
 use PHPUnit\Framework\TestCase;
 
-abstract class UnitTest extends TestCase
+abstract class UnitTestCase extends TestCase
 {
 }
